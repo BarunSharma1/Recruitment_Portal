@@ -2,10 +2,12 @@
 $servername = "localhost";
 $username = "root";
 $password = "";
-$dbname = "portal_data";
+$dbname = "recruiter_data";
 
+// Create connection
 $conn = new mysqli($servername, $username, $password, $dbname);
 
+// Check connection
 if ($conn->connect_error) {
     die("Connection failed: " . $conn->connect_error);
 }
